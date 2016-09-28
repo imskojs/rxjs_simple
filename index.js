@@ -9,3 +9,11 @@ const btnClickStream =
     .fromEvent(addLocationBtn, 'click')
     .map(() => true)
     .forEach(val => console.log('btnClickStream val', val));
+
+// Get stream of zip codes
+const zipInputStream =
+  Rx.Observable
+    .fromEvent(zipcodeInput, 'input')
+    .map(e => e.target.value)
+    .filter(zip => zip.length === 5)
+    .forEach(val => console.log('zipInputStream val', val));
