@@ -1,3 +1,4 @@
+// https://auth0.com/blog/understanding-reactive-programming-and-rxjs/?utm_source=jslive&utm_medium=sc&utm_campaign=reactive_programming
 /* globals Rx */
 const appContainer = document.getElementById('app-container');
 const zipcodeInput = document.getElementById('zipcode-input');
